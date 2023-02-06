@@ -1,0 +1,134 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 500px;
+    height: 400px;
+    margin: 50px auto;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 15px #989898,
+             -5px -5px 15px #ffffff;
+    position: relative;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    
+}
+.container-video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.container-video video
+{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.item
+{
+    z-index: 10;
+}
+.container-screen
+{
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #000000;
+}
+.container-buttons
+{
+    width: 300px;
+    float: left;
+    cursor: pointer;
+}
+.container-buttons span
+{
+    width: 30%;
+    height: 50px;
+    background-color: #ffffff;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    border-radius: 50px;
+    background: #e0e0e0;
+    border-radius: 50px;
+    background: #e0e0e0;
+    border-radius: 50px;
+    background: #e0e0e0;
+    
+
+             background: radial-gradient(#D8B53A, #000000);
+             font-weight: bold;
+}
+.container-buttons-operation
+{
+    width: 100px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.container-buttons-operation span
+{
+    height: 50px;
+    background-color: #ffffff;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #989898;
+   
+             background: radial-gradient(#D8B53A, #000000);
+             font-weight: bold;
+             color: white;
+}
+
+#equal
+{
+    
+             background: radial-gradient(#BDC3C7, #2C3E50);
+             font-weight: bold;
+             color: white;
+}
+
+.container span
+{
+    transition: box-shadow 1.2s;
+}
+
+@media screen and (max-width:768px)
+{
+    .container
+    {
+        width: 450px;
+        height: 400px;
+
+    }
+}
